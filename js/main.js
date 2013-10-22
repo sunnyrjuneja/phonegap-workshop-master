@@ -17,7 +17,7 @@ var app = {
       if (navigation.notifcation) {
           navigator.notification.alert(message, null, title, 'OK');
       } else { 
-          alert(title ? title + ": " + message) : message);
+          alert(title ? (title + ": " + message) : message);
       }
     }
     initialize: function() { 
